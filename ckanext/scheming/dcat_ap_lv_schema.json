@@ -1,0 +1,245 @@
+{
+  "scheming_version": 1,
+  "dataset_type": "dataset",
+  "about": "DCAT-AP-No v. 1.1, the Latvian version of DCAT-AP",
+  "about_url": "https://doc.difi.no/dcat-ap-no/",
+  "dataset_fields": [
+    { "dcat_ap_comment": "dct:title",
+      "field_name": "title",
+      "label": {
+		"lv": "Virsraksts",
+		"en": "Title"
+	  },
+	  "required": true,
+      "preset": "title",
+      "form_placeholder": "Datu kopas nosaukums"
+    },
+    { "dcat_ap_comment": "CKAN-specific field",
+      "field_name": "name",
+      "label": "URL",
+      "preset": "dataset_slug",
+      "form_placeholder": "eg. my-dataset"
+    },
+    { "dcat_ap_comment": "dct:description",
+      "field_name": "notes",
+      "label": {
+		"lv": "Apraksts",
+		"en": "Description"
+	  },
+	  "required": true,
+      "form_snippet": "markdown.html",
+      "form_placeholder": "piem. Dažas noderīgas piezīmes par datu kopu"
+    },
+    { "dcat_ap_no_comment": "dcat:keyword",
+      "field_name": "tag_string",
+      "label": {
+		"lv": "Atslēgvārdi",
+		"en": "Tags"
+	  },
+	  "required": true,
+      "preset": "tag_string_autocomplete",
+      "form_placeholder": "Piem. ekonomika, veselība, vide"
+    },
+	{ "field_name": "frequency",
+      "label": { "lv": "Atjaunošanas biežums",
+				 "en": "Frequency"},
+	  "required": true,
+	  "preset": "select",
+		"choices": [
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/DAILY",
+			"label": "katru dienu"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/ANNUAL",
+			"label": "reizi gadā"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/ANNUAL_2",
+			"label": "reizi pusgadā"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/ANNUAL_3",
+			"label": "trīsreiz gadā"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/BIENNIAL",
+			"label": "reizi divos gados"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/BIMONTHLY",
+			"label": "reizi divos mēnešos"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/BIWEEKLY",
+			"label": "reizi divās nedēļās"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/CONT",
+			"label": "pastāvīgi"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/DAILY_2",
+			"label": "divreiz dienā"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/IRREG",
+			"label": "neregulāri"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/MONTHLY",
+			"label": "reizi mēnesī"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/MONTHLY_2",
+			"label": "divreiz mēnesī"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/MONTHLY_3",
+			"label": "trīsreiz mēnesī"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/QUARTERLY",
+			"label": "reizi trīs mēnešos"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/TRIENNIAL",
+			"label": "reizi trīs gados"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/UNKNOWN",
+			"label": "nav zināms"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/UPDATE_CONT",
+			"label": "pastāvīgi tiek atjaunots"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/WEEKLY",
+			"label": "reizi nedēļā"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/WEEKLY_2",
+			"label": "divreiz nedēļā"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/WEEKLY_3",
+			"label": "trīsreiz nedēļā"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/NEVER",
+			"label": "nekad"
+			},
+			{
+			"value": "http://publications.europa.eu/mdr/authority/frequency/OTHER",
+			"label": "citi"
+			}
+		]
+    }, 
+	{ "dcat_ap_no_comment": "dct:license",
+      "field_name": "license_id",
+      "label": {
+		"lv": "Licence",
+		"en": "License"
+	  },
+	  "required": true,
+      "form_snippet": "license.html",
+      "help_text": "Licencu definīcijas un papildu informāciju var atrast http://opendefinition.org/"
+    },
+    { "dcat_ap_no_comment": "dct:publisher",
+      "field_name": "owner_org",
+      "label": { "lv": "Publicētājs",
+				 "en": "Organization"},
+	  "required": true,
+      "preset": "dataset_organization"
+    },
+    { "dcat_ap_no_comment": "dcat:contactPoint",
+      "field_name": "maintainer",
+      "label": {
+		"lv": "Atbildīgas personas nosaukums",
+		"en": "Maintainer"
+	  },
+      "form_placeholder": "(ja nepieciešams norādīt)",
+      "help_text": "Lūdzu norādiet datu kopas atbildīgas personas nosaukumu"
+    },
+    { "dcat_ap_no_comment": "dcat:contactPoint",
+      "field_name": "maintainer_email",
+      "label": {
+		"lv": "Atbildīgas personas e-pasts",
+		"en": "Maintainer Email"
+	  },
+	  "required": true,
+      "form_placeholder": "juris@example.com",
+      "display_snippet": "email.html",
+      "display_email_name_field": "maintainer"
+    },
+	{ "dcat_ap_no_comment": "dct:language",
+	  "field_name": "language",
+      "label": { "lv": "Valoda",
+				 "en": "Language"},
+	  "required": true,
+	  "preset": "select",
+		"choices": [
+			{
+			"value": "lv",
+			"label": "Latviešu"
+			},
+			{
+			"value": "en",
+			"label": "Angļu"
+			}
+		],
+        "help_text": {    "en": "The language of the dataset.",
+                          "lv": "Datu kopas valoda"}
+    }, 
+    
+    { "dcat_ap_no_comment": "dct:issued",
+      "field_name": "issued",
+      "label": { "lv": "Datu izdošanas datums",
+                  "en": "Issued Date"},
+      "preset": "date",
+      "help_text": {    "en": "The date the dataset was issued",
+                        "lv": "Datu kopas izdošanas datums"}
+    },
+    { "dcat_ap_no_comment": "dct:modified",
+      "field_name": "modified",
+      "label": { "lv": "Datu pēdējo izmaiņu datums",
+                  "en": "Modified"},
+      "help_text": {    "en": "When the dataset was last updated",
+                        "lv": "Kad datu kopa pēdējo reizi tika atjaunināta"},
+      "preset": "date"
+    }
+    ],
+  "resource_fields": [
+    {
+      "field_name": "url",
+      "label": "URL",
+      "preset": "resource_url_upload"
+    },
+    {
+      "field_name": "name",
+      "label": {
+		"lv": "Nosaukums",
+		"en": "Name"
+	  },
+      "form_placeholder": "piem. Zelta cenas 2017 gada janvārī"
+    },
+    {
+      "field_name": "description",
+      "label": {
+		"lv": "Apraksts",
+		"en": "Description"
+	  },
+      "form_snippet": "markdown.html",
+      "form_placeholder": "Noderīgas piezīmes par datiem"
+    },
+    {
+      "field_name": "format",
+      "label": {
+		"lv": "Formāts",
+		"en": "Format"
+	  },
+      "preset": "resource_format_autocomplete"
+    }
+  ]
+}
