@@ -240,6 +240,13 @@
 		"en": "Format"
 	  },
       "preset": "resource_format_autocomplete"
+    },
+	{ "dcat_ap_no_comment": "dcat:conformsTo",
+      "field_name": "conformsTo",
+      "label": {
+		"lv": "Mašīnlasāms struktūras apraksts",
+		"en": "Mašīnlasāms struktūras apraksts"
+	  }
     }
   ]
 }
