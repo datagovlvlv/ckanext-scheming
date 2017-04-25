@@ -139,12 +139,12 @@
 	{ "dcat_ap_no_comment": "dct:license",
       "field_name": "license_id",
       "label": {
-		"lv": "Licence",
+		"lv": "Atkalizmantošanas nosacījumi",
 		"en": "License"
 	  },
 	  "required": true,
       "form_snippet": "license.html",
-      "help_text": "Licencu definīcijas un papildu informāciju var atrast http://opendefinition.org/"
+      "help_text": "Atbilstoši Informācijas atklātības likuma 17. pantam, atkalizmantošanai var paredzēt nosacījumus. Ja tiek publicēta vispārpieejama informācija un netiek izvirzīti īpaši nosacījumi, atbilstoši pasaules labākajai praksei, ieteicams izmantot atsauci uz Creative Commons CC0 1.0 Universālo licenci, kas atļauj izmantot datus bez ierobežojumiem."
     },
     { "dcat_ap_no_comment": "dct:publisher",
       "field_name": "owner_org",
