@@ -144,7 +144,7 @@
 	  },
 	  "required": true,
       "form_snippet": "license.html",
-      "help_text": "Ņemot vērā, ka tiek publicēta vispārpieejama informācija, atbilstoši pasaules labākajai praksei, ieteicams izmantot atsauci uz Creative Commons CC0 1.0 Universālo licenci,  kas atļauj izmantot datus bez ierobežojumiem."
+      "help_text": "Atbilstoši <a href=\"https://likumi.lv/ta/id/50601-informacijas-atklatibas-likums#p-564244\" target=\"_blank\">Informācijas atklātības likuma 17. pantam</a>, atkalizmantošanai var paredzēt nosacījumus. Ja tiek publicēta vispārpieejama informācija un netiek izvirzīti īpaši nosacījumi, atbilstoši pasaules labākajai praksei, ieteicams izmantot atsauci uz <a href=\"https://creativecommons.org/publicdomain/zero/1.0/legalcode.lv\" target=\"_blank\">Creative Commons CC0 1.0 Universālo licenci</a>, kas atļauj izmantot datus bez ierobežojumiem."
     },
     { "dcat_ap_no_comment": "dct:publisher",
       "field_name": "owner_org",
