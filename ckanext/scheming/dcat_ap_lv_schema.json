@@ -169,6 +169,7 @@
 		"en": "Maintainer Email"
 	  },
 	  "required": true,
+	  "validators": "valid_email",
       "form_placeholder": "juris@example.com",
       "display_snippet": "email.html",
       "display_email_name_field": "maintainer"
