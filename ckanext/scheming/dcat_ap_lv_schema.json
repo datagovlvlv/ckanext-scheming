@@ -156,7 +156,7 @@
     { "dcat_ap_no_comment": "dcat:contactPoint",
       "field_name": "maintainer",
       "label": {
-		"lv": "Atbildīgās personas nosaukums",
+		"lv": "Datu publicētāja struktūrvienība",
 		"en": "Maintainer"
 	  },
       "form_placeholder": "(ja nepieciešams norādīt)",
@@ -165,7 +165,7 @@
     { "dcat_ap_no_comment": "dcat:contactPoint",
       "field_name": "maintainer_email",
       "label": {
-		"lv": "Atbildīgās personas e-pasts",
+		"lv": "Saziņas e-pasts datu jautājumiem",
 		"en": "Maintainer Email"
 	  },
 	  "required": true,
