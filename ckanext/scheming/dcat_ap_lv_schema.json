@@ -7,12 +7,12 @@
     { "dcat_ap_comment": "dct:title",
       "field_name": "title",
       "label": {
-		"lv": "Virsraksts",
+		"lv": "Datu kopas nosaukums",
 		"en": "Title"
 	  },
 	  "required": true,
       "preset": "title",
-      "form_placeholder": "Datu kopas nosaukums"
+      "form_placeholder": "Īsumā raksturo datu kopas saturu, lai jebkurš var saprast par ko ir dati."
     },
     { "dcat_ap_comment": "CKAN-specific field",
       "field_name": "name",
@@ -23,23 +23,24 @@
     { "dcat_ap_comment": "dct:description",
       "field_name": "notes",
       "label": {
-		"lv": "Apraksts",
+		"lv": "Apraksts un atslēgvārdi",
 		"en": "Description"
 	  },
 	  "required": true,
       "form_snippet": "markdown.html",
-      "form_placeholder": "piem. Dažas noderīgas piezīmes par datu kopu"
+      "form_placeholder": "Apraksts par datiem, saturam nav ierobežojumu, ieteicams lietot pēc iespējas vairāk atslēgvārdu, kas palīdz meklēt datus. Atslēgvārdiem jāatbild uz jautājumiem: Kādus atslēgvārdus jūs lietotu, lai meklētu konkrētos datus?, Kā jūsu dati tiek meklēti tīmeklī?, Kādus atslēgvārdus varētu izmantot ar nozari nesaistītas personas?"
     },
     { "dcat_ap_no_comment": "dcat:keyword",
       "field_name": "tag_string",
       "label": {
-		"lv": "Atslēgvārdi",
+		"lv": "Birkas",
 		"en": "Tags"
 	  },
 	  "required": true,
       "preset": "tag_string_autocomplete",
-      "form_placeholder": "Piem. ekonomika, veselība, vide"
-    },
+      "form_placeholder": "Piemēram: iepirkumi, bērnudārzi, būvdarbi",
+	  "help_text": "Dažas specifiskas birkas, kas palīdz kārtot datus. Vairākas birkas var veidot vārdu virkni, atdalītājs ir komats. Ieteicams izmantot portālā jau esošas birkas, kuras apskatāmas <a href=\"https://data.gov.lv/dati/lv/dataset\" target=\"_blank\">portāla datu kataloga sadaļas labajā pusē</a>. Birkām nevajadzētu dublēt Datu kataloga kategorijas, kuras atbilstoši publicētāju izvēlei, portāla pārzinis piešķir datu kopām pēc to publicēšanas."
+	},
 	{ "field_name": "frequency",
       "label": { "lv": "Atjaunošanas biežums",
 				 "en": "Frequency"},
@@ -159,8 +160,7 @@
 		"lv": "Datu publicētāja struktūrvienība",
 		"en": "Maintainer"
 	  },
-      "form_placeholder": "(ja nepieciešams norādīt)",
-      "help_text": "Lūdzu norādiet datu kopas atbildīgas personas nosaukumu"
+      "form_placeholder": "(ja nepieciešams norādīt)"
     },
     { "dcat_ap_no_comment": "dcat:contactPoint",
       "field_name": "maintainer_email",
@@ -170,7 +170,7 @@
 	  },
 	  "required": true,
 	  "validators": "valid_email",
-      "form_placeholder": "juris@example.com",
+      "form_placeholder": "Piemēram: dati@iestade.gov.lv, vards.uzvards@iestade.gov.lv",
       "display_snippet": "email.html",
       "display_email_name_field": "maintainer"
     },
@@ -200,14 +200,14 @@
                   "en": "Issued Date"},
       "preset": "date",
       "help_text": {    "en": "The date the dataset was issued",
-                        "lv": "Datu kopas izdošanas datums"}
+                        "lv": "Izdošanas datums, kad dati pirmo reizi tikuši apkopoti un izdoti. Attiecas uz datiem kopumā, ne tikai to publicēšanu atvērtā veidā."}
     },
     { "dcat_ap_no_comment": "dct:modified",
       "field_name": "modified",
       "label": { "lv": "Datu pēdējo izmaiņu datums",
                   "en": "Modified"},
       "help_text": {    "en": "When the dataset was last updated",
-                        "lv": "Kad datu kopa pēdējo reizi tika atjaunināta"},
+                        "lv": "Pēdējais zināmais datums, kad datu kopa mainīta vai atjaunināta. Neaizpilda, ja dati tiek atjaunoti regulāri vai arī pēc to publicēšanas netiek mainīti vispār."},
       "preset": "date"
     }
     ],
@@ -223,7 +223,7 @@
 		"lv": "Nosaukums",
 		"en": "Name"
 	  },
-      "form_placeholder": "piem. Zelta cenas 2017 gada janvārī"
+      "form_placeholder": "Faila vai saites nosaukums, kā tas tiks attēlots pie datu kopas apraksta."
     },
     {
       "field_name": "description",
@@ -232,7 +232,7 @@
 		"en": "Description"
 	  },
       "form_snippet": "markdown.html",
-      "form_placeholder": "Noderīgas piezīmes par datiem"
+      "form_placeholder": "Noderīgas piezīmes par datiem, apraksts par konkrēto failu vai saiti"
     },
     {
       "field_name": "format",
