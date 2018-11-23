@@ -237,6 +237,11 @@ def scheming_multiple_choice_output(value):
     except ValueError:
         return [value]
 
+def scheming_spatial_input(value):
+    return unicode(value) if value == 'Latvija' else None
+
+def scheming_spatial_output(value):
+    return unicode('1' if value == 'Latvija' else '0')
 
 def validators_from_string(s, field, schema):
     """

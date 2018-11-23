@@ -25,7 +25,9 @@ from ckanext.scheming.validation import (
     scheming_multiple_choice,
     scheming_multiple_choice_output,
     scheming_isodatetime,
-    scheming_isodatetime_tz
+    scheming_isodatetime_tz,
+    scheming_spatial_input,
+    scheming_spatial_output
 )
 from ckanext.scheming.logic import (
     scheming_dataset_schema_list,
@@ -107,6 +109,8 @@ class _SchemingMixin(object):
             'convert_to_json_if_datetime': convert_to_json_if_datetime,
             'scheming_isodatetime': scheming_isodatetime,
             'scheming_isodatetime_tz': scheming_isodatetime_tz,
+            'scheming_spatial_input':scheming_spatial_input,
+            'scheming_spatial_output':scheming_spatial_output
             }
 
     def _add_template_directory(self, config):

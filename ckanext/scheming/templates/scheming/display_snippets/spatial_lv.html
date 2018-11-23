@@ -1,0 +1,9 @@
+{% if field.field_name in data  %}
+    {{ h.scheming_choices_label(
+        h.scheming_field_choices(field),
+        data[field.field_name]) }}
+{% else %}
+    {{ h.scheming_choices_label(
+        h.scheming_field_choices(field),
+        "") }}
+{% endif %}
